@@ -41,8 +41,8 @@ contract SimpleBank {
     
     modifier onlyEnrolled {
         require(
-            enrolled[msg.sender] == true,
-            "Only enrolled accounts can call this function."
+            enrolled[msg.sender] == true
+            //"Only enrolled accounts can call this function."
         );
         _;
     }
